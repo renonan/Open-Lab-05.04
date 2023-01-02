@@ -8,7 +8,7 @@ namespace Open_Lab_05._04
     {
         public string RemoveSpecialCharacters(string original)
         {
-            StringBuilder sb = new StringBuilder();
+            string sb = "";
             foreach (char c in original)
             {
                 if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '_' || c == '-' || c == ' ')
