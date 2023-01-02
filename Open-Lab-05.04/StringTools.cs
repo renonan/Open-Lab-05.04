@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Text;
 
@@ -8,15 +8,15 @@ namespace Open_Lab_05._04
     {
         public string RemoveSpecialCharacters(string original)
         {
-            string sb = "";
+            string result ="";
             foreach (char c in original)
             {
                 if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '_' || c == '-' || c == ' ')
                 {
-                    sb.Append(c);
+                   result+= c;
                 }
             }
-            return sb.ToString();
+            return result;
         }
     }
 }
